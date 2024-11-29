@@ -29,6 +29,7 @@ Você também encontrará estatísticas avançadas com métricas criadas interna
 
 
 
+
 # Título en la barra lateral
     st.sidebar.header('Explore as seguintes opções')
 
@@ -48,6 +49,19 @@ st.sidebar.image(sidebar_logo, use_container_width=False, width=100)
 
 # Mostrar el logo en el cuerpo principal
 st.image(main_body_logo, use_container_width=False, width=100)
+
+
+# Footer
+st.markdown(
+    """
+    <footer style="background-color: #116F4B; color: white; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%; font-size: 14px;">
+        © 2024 Sada Cruzeiro Vôlei. Todos os direitos reservados.
+        <br>
+        <a href="https://www.sadacruzeiro.com.br" target="_blank" style="color: white;">Visite nosso site</a>
+    </footer>
+    """, 
+    unsafe_allow_html=True
+)
 
 
 
